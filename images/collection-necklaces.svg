@@ -1,25 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-labelledby="t1">
-  <title id="t1">Ethiopian gold necklace</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="t1">
+  <title id="t1">Ethiopian gold necklace, studio still life</title>
   <defs>
-    <linearGradient id="g1" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#EFD9A6"/><stop offset="0.55" stop-color="#C9A24B"/><stop offset="1" stop-color="#8C6A3F"/>
+    <radialGradient id="bg1" cx="0.5" cy="0.35" r="0.85">
+      <stop offset="0" stop-color="#3a2f26"/><stop offset="0.55" stop-color="#20180f"/><stop offset="1" stop-color="#0d0a07"/>
+    </radialGradient>
+    <radialGradient id="spot1" cx="0.5" cy="0.3" r="0.45">
+      <stop offset="0" stop-color="#f2cf8e" stop-opacity="0.45"/><stop offset="1" stop-color="#f2cf8e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6E2AE"/><stop offset="0.45" stop-color="#D6AD5F"/><stop offset="1" stop-color="#8C6A3F"/>
     </linearGradient>
-    <filter id="s1" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#3a2e1a" flood-opacity="0.16"/>
-    </filter>
+    <radialGradient id="shadow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#000" stop-opacity="0.5"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="500" height="500" fill="#F4EEE1"/>
-  <circle cx="250" cy="250" r="190" fill="#FAF6EE"/>
-  <circle cx="250" cy="250" r="190" fill="none" stroke="#C9A24B" stroke-opacity="0.2"/>
-  <g filter="url(#s1)">
-    <path d="M150 190 C 185 250, 215 275, 250 275 C 285 275, 315 250, 350 190"
-          fill="none" stroke="url(#g1)" stroke-width="5" stroke-linecap="round"/>
-    <g fill="url(#g1)">
-      <circle cx="150" cy="190" r="6"/><circle cx="175" cy="222" r="5.5"/><circle cx="203" cy="248" r="5.5"/>
-      <circle cx="235" cy="264" r="5.5"/><circle cx="250" cy="267" r="6"/><circle cx="265" cy="264" r="5.5"/>
-      <circle cx="297" cy="248" r="5.5"/><circle cx="325" cy="222" r="5.5"/><circle cx="350" cy="190" r="6"/>
-    </g>
-    <path d="M250 267 L 220 335 C 220 375, 280 375, 280 335 Z" fill="url(#g1)"/>
-    <circle cx="250" cy="288" r="8" fill="#FAF6EE" fill-opacity="0.9"/>
+  <rect width="700" height="700" fill="url(#bg1)"/>
+  <rect width="700" height="700" fill="url(#spot1)"/>
+  <ellipse cx="350" cy="520" rx="170" ry="34" fill="url(#shadow1)"/>
+  <path d="M210 250 C 250 350, 300 385, 350 385 C 400 385, 450 350, 490 250"
+        fill="none" stroke="url(#g1)" stroke-width="6" stroke-linecap="round"/>
+  <g fill="url(#g1)">
+    <circle cx="210" cy="250" r="7"/><circle cx="240" cy="292" r="6.5"/><circle cx="275" cy="325" r="6.5"/>
+    <circle cx="315" cy="347" r="6.5"/><circle cx="350" cy="353" r="7"/><circle cx="385" cy="347" r="6.5"/>
+    <circle cx="425" cy="325" r="6.5"/><circle cx="460" cy="292" r="6.5"/><circle cx="490" cy="250" r="7"/>
+  </g>
+  <path d="M350 353 L 312 450 C 312 500, 388 500, 388 450 Z" fill="url(#g1)"/>
+  <path d="M350 353 L 330 410 L 370 410 Z" fill="#FCEFC7" opacity="0.55"/>
+  <circle cx="350" cy="385" r="10" fill="#FAF6EE" opacity="0.7"/>
+  <g fill="#F6E2AE">
+    <circle cx="300" cy="280" r="1.8" opacity="0.8"/>
+    <circle cx="410" cy="300" r="1.4" opacity="0.6"/>
+    <circle cx="350" cy="420" r="1.6" opacity="0.6"/>
   </g>
 </svg>

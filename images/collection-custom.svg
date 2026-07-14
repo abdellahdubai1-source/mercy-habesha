@@ -1,23 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-labelledby="t5">
-  <title id="t5">Custom gold jewelry design</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="t5">
+  <title id="t5">Custom gold jewelry design, studio still life</title>
   <defs>
-    <linearGradient id="g5" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#EFD9A6"/><stop offset="0.55" stop-color="#C9A24B"/><stop offset="1" stop-color="#8C6A3F"/>
+    <radialGradient id="bg5" cx="0.5" cy="0.35" r="0.85">
+      <stop offset="0" stop-color="#3a2f26"/><stop offset="0.55" stop-color="#20180f"/><stop offset="1" stop-color="#0d0a07"/>
+    </radialGradient>
+    <radialGradient id="spot5" cx="0.5" cy="0.3" r="0.45">
+      <stop offset="0" stop-color="#f2cf8e" stop-opacity="0.45"/><stop offset="1" stop-color="#f2cf8e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6E2AE"/><stop offset="0.45" stop-color="#D6AD5F"/><stop offset="1" stop-color="#8C6A3F"/>
     </linearGradient>
-    <filter id="s5" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#3a2e1a" flood-opacity="0.16"/>
-    </filter>
+    <radialGradient id="shadow5" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#000" stop-opacity="0.5"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="500" height="500" fill="#F4EEE1"/>
-  <circle cx="250" cy="250" r="190" fill="#FAF6EE"/>
-  <circle cx="250" cy="250" r="190" fill="none" stroke="#C9A24B" stroke-opacity="0.2"/>
-  <g filter="url(#s5)">
-    <path d="M250 190 L 300 230 L 280 300 L 220 300 L 200 230 Z" fill="url(#g5)"/>
-    <path d="M250 190 L 220 230 L 280 230 Z" fill="#FAF6EE" fill-opacity="0.35"/>
-    <path d="M220 230 L 280 230 L 280 300 L 220 300 Z" fill="#3a2e1a" fill-opacity="0.06"/>
-    <g stroke="url(#g5)" stroke-width="2.5" stroke-linecap="round">
-      <path d="M340 175 L 352 175 M346 169 L 346 181"/>
-      <path d="M170 305 L 180 305 M175 300 L 175 310"/>
-    </g>
+  <rect width="700" height="700" fill="url(#bg5)"/>
+  <rect width="700" height="700" fill="url(#spot5)"/>
+  <ellipse cx="350" cy="500" rx="110" ry="24" fill="url(#shadow5)"/>
+  <path d="M350 255 L 420 315 L 393 410 L 307 410 L 280 315 Z" fill="url(#g5)"/>
+  <path d="M350 255 L 307 315 L 393 315 Z" fill="#FCEFC7" opacity="0.4"/>
+  <path d="M307 315 L 393 315 L 393 410 L 307 410 Z" fill="#5b4225" opacity="0.35"/>
+  <g stroke="url(#g5)" stroke-width="3" stroke-linecap="round">
+    <path d="M480 240 L 496 240 M488 232 L 488 248"/>
+    <path d="M220 430 L 234 430 M227 423 L 227 437"/>
+  </g>
+  <g fill="#F6E2AE">
+    <circle cx="450" cy="330" r="1.8" opacity="0.7"/>
+    <circle cx="260" cy="380" r="1.5" opacity="0.6"/>
   </g>
 </svg>
