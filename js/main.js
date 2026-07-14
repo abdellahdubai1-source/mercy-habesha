@@ -25,12 +25,24 @@
     mainNav.classList.remove("open");
     menuToggle.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open menu");
+    document.body.classList.remove("menu-open");
+  }
+
+  function openMenu() {
+    mainNav.classList.add("open");
+    menuToggle.classList.add("open");
+    menuToggle.setAttribute("aria-expanded", "true");
+    menuToggle.setAttribute("aria-label", "Close menu");
+    document.body.classList.add("menu-open");
   }
 
   menuToggle.addEventListener("click", function () {
-    var isOpen = mainNav.classList.toggle("open");
-    menuToggle.classList.toggle("open", isOpen);
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    if (mainNav.classList.contains("open")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
 
   mainNav.querySelectorAll("a").forEach(function (link) {
@@ -41,6 +53,13 @@
     if (!mainNav.classList.contains("open")) return;
     if (mainNav.contains(e.target) || menuToggle.contains(e.target)) return;
     closeMenu();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && mainNav.classList.contains("open")) {
+      closeMenu();
+      menuToggle.focus();
+    }
   });
 
   // Smooth-scroll to any same-page anchor link (nav, hero, card links)
