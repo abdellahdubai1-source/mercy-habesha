@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" role="img" aria-labelledby="ab1">
+  <title id="ab1">Mercy Habesha Gold store in Deira Gold Souk</title>
+  <defs>
+    <linearGradient id="abBg" x1="0" y1="0" x2="700" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F4EEE1"/><stop offset="1" stop-color="#EADFC4"/>
+    </linearGradient>
+    <linearGradient id="abGold" x1="0" y1="0" x2="700" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E7C77D"/><stop offset="0.55" stop-color="#C9A24B"/><stop offset="1" stop-color="#8C6A3F"/>
+    </linearGradient>
+    <filter id="abShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3a2e1a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="700" height="560" fill="url(#abBg)"/>
+
+  <!-- arched doorway -->
+  <path d="M170 500 V300 C170 210 230 160 350 160 C470 160 530 210 530 300 V500 Z"
+        fill="#FAF6EE"/>
+  <path d="M170 500 V300 C170 210 230 160 350 160 C470 160 530 210 530 300 V500"
+        fill="none" stroke="url(#abGold)" stroke-width="4"/>
+  <path d="M195 500 V305 C195 225 250 183 350 183 C450 183 505 225 505 305 V500"
+        fill="none" stroke="url(#abGold)" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- hanging display jewelry -->
+  <g filter="url(#abShadow)">
+    <g transform="translate(280,220)">
+      <path d="M0 0 L0 20" stroke="url(#abGold)" stroke-width="3"/>
+      <path d="M-30 20 C-30 60, 30 60, 30 20 Z" fill="url(#abGold)"/>
+    </g>
+    <g transform="translate(350,205)">
+      <path d="M0 0 L0 26" stroke="url(#abGold)" stroke-width="3"/>
+      <circle cx="0" cy="40" r="16" fill="none" stroke="url(#abGold)" stroke-width="7"/>
+    </g>
+    <g transform="translate(420,220)">
+      <path d="M0 0 L0 20" stroke="url(#abGold)" stroke-width="3"/>
+      <path d="M-30 20 C-30 60, 30 60, 30 20 Z" fill="url(#abGold)"/>
+    </g>
+  </g>
+
+  <!-- display shelf -->
+  <rect x="230" y="380" width="240" height="10" rx="3" fill="url(#abGold)" opacity="0.9"/>
+  <g fill="url(#abGold)">
+    <circle cx="270" cy="410" r="14"/>
+    <circle cx="350" cy="405" r="18"/>
+    <circle cx="430" cy="410" r="14"/>
+  </g>
+
+  <!-- ground line and soft dots -->
+  <path d="M120 500 H580" stroke="url(#abGold)" stroke-opacity="0.3" stroke-width="1.5"/>
+  <circle cx="90" cy="150" r="3" fill="#C9A24B" opacity="0.5"/>
+  <circle cx="610" cy="180" r="3" fill="#C9A24B" opacity="0.5"/>
+  <circle cx="630" cy="120" r="2" fill="#C9A24B" opacity="0.4"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-labelledby="p3">
+  <title id="p3">Solid gold bangle bracelet</title>
+  <defs>
+    <linearGradient id="pg3" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFD9A6"/><stop offset="0.55" stop-color="#C9A24B"/><stop offset="1" stop-color="#8C6A3F"/>
+    </linearGradient>
+    <filter id="ps3" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#3a2e1a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="500" height="500" fill="#F4EEE1"/>
+  <circle cx="250" cy="250" r="190" fill="#FAF6EE"/>
+  <circle cx="250" cy="250" r="190" fill="none" stroke="#C9A24B" stroke-opacity="0.2"/>
+  <g filter="url(#ps3)">
+    <ellipse cx="250" cy="255" rx="120" ry="95" fill="none" stroke="url(#pg3)" stroke-width="20"/>
+    <ellipse cx="250" cy="255" rx="120" ry="95" fill="none" stroke="#3a2e1a" stroke-opacity="0.08" stroke-width="20" stroke-dasharray="2 14"/>
+  </g>
+</svg>

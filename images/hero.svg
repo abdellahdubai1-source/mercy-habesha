@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Elegant Ethiopian gold jewelry collection</title>
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FAF6EE"/>
+      <stop offset="1" stop-color="#F1E8D6"/>
+    </linearGradient>
+    <linearGradient id="heroGold" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFD9A6"/>
+      <stop offset="0.5" stop-color="#C9A24B"/>
+      <stop offset="1" stop-color="#8C6A3F"/>
+    </linearGradient>
+    <radialGradient id="heroGlow" cx="0.62" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#F4D999" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#F4D999" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="heroShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#3a2e1a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#heroBg)"/>
+  <circle cx="740" cy="360" r="420" fill="url(#heroGlow)"/>
+
+  <!-- decorative rings -->
+  <circle cx="740" cy="360" r="330" fill="none" stroke="#C9A24B" stroke-opacity="0.18" stroke-width="1"/>
+  <circle cx="740" cy="360" r="250" fill="none" stroke="#C9A24B" stroke-opacity="0.25" stroke-width="1"/>
+
+  <g filter="url(#heroShadow)">
+    <!-- necklace chain -->
+    <path d="M540 230
+             C 600 300, 660 330, 740 330
+             C 820 330, 880 300, 940 230"
+          fill="none" stroke="url(#heroGold)" stroke-width="6" stroke-linecap="round"/>
+    <g fill="url(#heroGold)">
+      <circle cx="540" cy="230" r="7"/>
+      <circle cx="575" cy="272" r="6"/>
+      <circle cx="612" cy="303" r="6"/>
+      <circle cx="655" cy="323" r="6"/>
+      <circle cx="700" cy="331" r="6"/>
+      <circle cx="740" cy="333" r="7"/>
+      <circle cx="780" cy="331" r="6"/>
+      <circle cx="825" cy="323" r="6"/>
+      <circle cx="868" cy="303" r="6"/>
+      <circle cx="905" cy="272" r="6"/>
+      <circle cx="940" cy="230" r="7"/>
+    </g>
+    <!-- pendant -->
+    <path d="M740 333 L 700 420 C 700 470, 780 470, 780 420 Z"
+          fill="url(#heroGold)"/>
+    <path d="M740 333 L 700 420 C 700 470, 780 470, 780 420 Z"
+          fill="none" stroke="#6E5330" stroke-width="2" stroke-opacity="0.4"/>
+    <circle cx="740" cy="360" r="10" fill="#FAF6EE" fill-opacity="0.85"/>
+  </g>
+
+  <g filter="url(#heroShadow)" transform="translate(0,40)">
+    <!-- earrings flanking -->
+    <g transform="translate(430,520)">
+      <circle cx="0" cy="0" r="6" fill="url(#heroGold)"/>
+      <path d="M0 6 C -18 30, -18 70, 0 92 C 18 70, 18 30, 0 6 Z" fill="url(#heroGold)"/>
+    </g>
+    <g transform="translate(1010,520)">
+      <circle cx="0" cy="0" r="6" fill="url(#heroGold)"/>
+      <path d="M0 6 C -18 30, -18 70, 0 92 C 18 70, 18 30, 0 6 Z" fill="url(#heroGold)"/>
+    </g>
+  </g>
+
+  <!-- fine dotted accent line -->
+  <path d="M120 780 C 400 830, 800 830, 1080 780" fill="none" stroke="#C9A24B" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="1 10" stroke-linecap="round"/>
+</svg>

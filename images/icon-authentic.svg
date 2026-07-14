@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" aria-hidden="true">
+  <defs>
+    <linearGradient id="ia" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D8B979"/><stop offset="1" stop-color="#8C6A3F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="40" cy="40" r="39" fill="none" stroke="url(#ia)" stroke-width="1.4"/>
+  <circle cx="40" cy="32" r="16" fill="none" stroke="url(#ia)" stroke-width="2.5"/>
+  <path d="M31 45 L 24 62 L 33 58 L 38 66 L 44 50" fill="none" stroke="url(#ia)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M49 45 L 56 62 L 47 58 L 42 66 L 36 50" fill="none" stroke="url(#ia)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="40" y="37" font-family="Georgia, serif" font-size="14" fill="url(#ia)" text-anchor="middle">Au</text>
+</svg>
