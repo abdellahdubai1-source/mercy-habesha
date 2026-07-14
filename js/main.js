@@ -83,6 +83,23 @@
     }
   }
 
+  // Keep the floating WhatsApp button clear of the brand-story video's controls.
+  // Only hide it while the video overlaps the bottom-right corner band where the
+  // button itself sits — not for the video's entire time on screen.
+  var aboutVideoWrapper = document.querySelector(".about-video-wrapper");
+  var fab = document.querySelector(".whatsapp-fab");
+  if (aboutVideoWrapper && fab && "IntersectionObserver" in window) {
+    var videoObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          fab.classList.toggle("is-hidden", entry.isIntersecting);
+        });
+      },
+      { threshold: 0, rootMargin: "-85% 0px 0px -60%" }
+    );
+    videoObserver.observe(aboutVideoWrapper);
+  }
+
   // Scroll-reveal animation
   var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && revealEls.length) {
