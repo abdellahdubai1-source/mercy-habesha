@@ -43,21 +43,6 @@
     closeMenu();
   });
 
-  // Hide the WhatsApp FAB once the footer is in view so it never overlaps footer text
-  var footerEl = document.querySelector(".site-footer");
-  var fab = document.querySelector(".whatsapp-fab");
-  if (footerEl && fab && "IntersectionObserver" in window) {
-    var fabObserver = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          fab.classList.toggle("is-hidden", entry.isIntersecting);
-        });
-      },
-      { threshold: 0 }
-    );
-    fabObserver.observe(footerEl);
-  }
-
   // Scroll-reveal animation
   var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && revealEls.length) {
