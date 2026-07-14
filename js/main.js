@@ -83,21 +83,24 @@
     }
   }
 
-  // Keep the floating WhatsApp button clear of the brand-story video's controls.
-  // Only hide it while the video overlaps the bottom-right corner band where the
-  // button itself sits — not for the video's entire time on screen.
-  var aboutVideoWrapper = document.querySelector(".about-video-wrapper");
+  // Keep the floating WhatsApp button clear of controls it could otherwise sit on top
+  // of (the brand-story video's controls, the embedded map's zoom controls). Only hide
+  // it while one of these elements overlaps the bottom-right corner band where the
+  // button itself lives — not for their entire time on screen.
   var fab = document.querySelector(".whatsapp-fab");
-  if (aboutVideoWrapper && fab && "IntersectionObserver" in window) {
-    var videoObserver = new IntersectionObserver(
+  var cornerWatchTargets = document.querySelectorAll(".about-media, .location-map");
+  if (fab && cornerWatchTargets.length && "IntersectionObserver" in window) {
+    var activeCornerOverlaps = 0;
+    var cornerObserver = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
-          fab.classList.toggle("is-hidden", entry.isIntersecting);
+          activeCornerOverlaps += entry.isIntersecting ? 1 : -1;
         });
+        fab.classList.toggle("is-hidden", activeCornerOverlaps > 0);
       },
       { threshold: 0, rootMargin: "-85% 0px 0px -60%" }
     );
-    videoObserver.observe(aboutVideoWrapper);
+    cornerWatchTargets.forEach(function (el) { cornerObserver.observe(el); });
   }
 
   // Scroll-reveal animation

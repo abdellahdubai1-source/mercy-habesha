@@ -364,7 +364,8 @@ button:focus-visible {
 .card-body h3 { margin-bottom: 8px; }
 .card-body p { font-size: 0.95rem; margin-bottom: 16px; }
 
-.card-link {
+.card-link,
+.about-cta {
   display: inline-block;
   font-weight: 600;
   font-size: 0.9rem;
@@ -372,7 +373,8 @@ button:focus-visible {
   border-bottom: 1px solid var(--color-gold-deep);
   padding-bottom: 2px;
 }
-.card-link:hover { color: var(--color-black); border-color: var(--color-black); }
+.card-link:hover,
+.about-cta:hover { color: var(--color-black); border-color: var(--color-black); }
 
 .section-cta { text-align: center; margin-top: 56px; }
 
@@ -413,10 +415,10 @@ button:focus-visible {
 .split-block.reverse .split-copy { order: 1; }
 .split-image { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-soft); }
 .split-copy p { font-size: 1.03rem; }
-.split-copy .card-link { margin-top: 6px; }
+.split-copy .about-cta { margin-top: 6px; }
 
 /* Premium brand-story video (About page) */
-.about-video-wrapper {
+.about-media {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-lg);
@@ -564,7 +566,7 @@ button:focus-visible {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  .about-video-wrapper { max-width: 100%; border-radius: 22px; }
+  .about-media { max-width: 100%; border-radius: 22px; }
   .collection-row:not(:last-child) { margin-bottom: 56px; }
   .split-block.reverse .split-image,
   .split-block.reverse .split-copy,
