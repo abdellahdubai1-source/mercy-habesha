@@ -43,19 +43,25 @@
     closeMenu();
   });
 
-  // Hide the floating WhatsApp button once the footer is in view so it never overlaps footer text
-  var footerEl = document.querySelector(".site-footer");
-  var fab = document.querySelector(".whatsapp-fab");
-  if (footerEl && fab && "IntersectionObserver" in window) {
-    var fabObserver = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          fab.classList.toggle("is-hidden", entry.isIntersecting);
-        });
-      },
-      { threshold: 0 }
-    );
-    fabObserver.observe(footerEl);
+  // Smooth-scroll to any same-page anchor link (nav, hero, card links)
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      var id = link.getAttribute("href").slice(1);
+      var target = id && document.getElementById(id);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  // Smooth-scroll to the hash target on arrival from another page (e.g. collections.html#necklaces)
+  if (window.location.hash) {
+    var hashTarget = document.getElementById(window.location.hash.slice(1));
+    if (hashTarget) {
+      window.requestAnimationFrame(function () {
+        hashTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
   }
 
   // Scroll-reveal animation
